@@ -1,6 +1,8 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: #ffecd1; 
+    color: #001524; 
 }
 
 .grid-container {
@@ -16,18 +18,18 @@ body {
 
 .header {
     grid-area: header;
-    background-color: #7da1ab;
+    background-color: #15616d; 
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    color: #fff;
+    color: #ffecd1; 
 }
 
 .sidenav {
     grid-area: sidenav;
-    background-color: #2b2e4a;
-    color: white;
+    background-color: #78290f;
+    color: #ffecd1; 
     padding-top: 70px;
     padding-left: 40px;
 }
@@ -40,12 +42,13 @@ body {
 .sidenav__list-item {
     margin: 2rem 0;
     cursor: pointer;
+    color: #ffecd1; 
 }
 
 .main {
     grid-area: main;
     padding: 1rem;
-    background-color: #88c8c8;
+    background-color: #ffecd1; 
     display: flex;
     flex-direction: column;
 }
@@ -53,12 +56,13 @@ body {
 .main-header {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start; 
-    background-color: #ccc;
+    align-items: flex-start;
+    background-color: #ff7d00; 
     padding: 1rem 2rem;
     margin-bottom: 1rem;
     border-radius: 4px;
     height: 150px;
+    color: #fff;
 }
 
 .main-overview {
@@ -69,7 +73,7 @@ body {
 }
 
 .overviewcard {
-    background-color: #92b6d5;
+    background-color: #15616d; 
     padding: 1rem;
     border-radius: 4px;
     text-align: center;
@@ -82,14 +86,14 @@ body {
 
 .main-cards {
     display: grid;
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: auto auto; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
     gap: 15px;
 }
 
 .card:first-child {
     grid-column: 1 / 2;
-    grid-row: 1 / span 2; 
+    grid-row: 1 / span 2;
     height: 350px;
 }
 
@@ -99,7 +103,7 @@ body {
 }
 
 .card {
-    background-color: #68a0cf;
+    background-color: #ff7d00;
     padding: 1rem;
     border-radius: 4px;
     color: #fff;
@@ -108,8 +112,8 @@ body {
 
 .footer {
     grid-area: footer;
-    background-color: #495c70;
-    color: white;
+    background-color: #001524; 
+    color: #ffecd1; 
     display: flex;
     justify-content: space-between;
     padding: 0.5rem 1rem;
@@ -118,7 +122,7 @@ body {
 
 @media (max-width: 768px) {
     .grid-container {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
         grid-template-areas:
             "header"
             "main"
@@ -132,7 +136,7 @@ body {
     .sidenav {
         position: absolute;
         top: 0;
-        left: -250px; 
+        left: -250px;
         width: 250px;
         height: 100vh;
         transition: left 0.3s ease;
@@ -140,7 +144,7 @@ body {
     }
 
     .sidenav.open {
-        left: 0; 
+        left: 0;
     }
 
     .menu-icon {
@@ -152,20 +156,19 @@ body {
         margin: 1rem 0;
     }
 
-    
     .main-overview {
         display: grid;
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
         gap: 10px;
     }
 
     .main-cards {
         display: grid;
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
     }
 
     .card:first-child {
-        grid-row: auto; 
+        grid-row: auto;
     }
 
     .footer {
@@ -177,7 +180,7 @@ body {
 
 @media (max-width: 480px) {
     .header {
-        flex-direction: column; 
+        flex-direction: column;
         padding: 0.5rem;
     }
 
@@ -187,6 +190,6 @@ body {
     }
 
     .sidenav__list-item {
-        font-size: 0.9rem; 
+        font-size: 0.9rem;
     }
 }
